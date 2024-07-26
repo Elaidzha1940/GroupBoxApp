@@ -37,3 +37,24 @@ struct ContentView: View {
     }
 }
 `````
+-----
+
+`MusicGroupBoxStyle` ViewModifier 
+`````ruby
+struct MusicGroupBoxStyle: GroupBoxStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        VStack(alignment: .leading) {
+            configuration.label
+                .bold()
+                .foregroundStyle(.pink)
+            configuration.content
+        }
+        .padding()
+        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 15))
+    }
+}
+
+extension GroupBoxStyle where Self == MusicGroupBoxStyle {
+    static var music: MusicGroupBoxStyle { .init() }
+}
+`````
