@@ -1,4 +1,4 @@
-⌨️ GroupBoxApp.
+⌨️ Group Box / Card View.
 =======
 
 -------
