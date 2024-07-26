@@ -1,4 +1,4 @@
-⌨️ Group Box / Card View.
+⌨️ GroupBox / Card View in SwiftUI.
 =======
 
 <img src="https://github.com/user-attachments/assets/4e859429-3238-40b0-8abc-6c7b7ae8604a" width="270" height="520">
