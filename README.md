@@ -5,7 +5,7 @@
 <img width="374" alt="2" src="https://github.com/user-attachments/assets/5e58bb5b-5e1a-4039-aac5-cbaa904d9f52">
 -------
 
-`````
+`````ruby
 struct ContentView: View {
     var body: some View {
         ZStack {
