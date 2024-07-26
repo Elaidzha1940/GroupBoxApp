@@ -6,6 +6,17 @@
 
 -------
 
+Features
+-------
+
+- Custom GroupBox Style: Unique style with rounded corners and padding.
+- Nested GroupBoxes: Create complex, card-like structures.
+- Music Player Interface: Mini music player with song title, progress bar, and controls.
+- Gradient Background: Enhances visual appeal.
+- Responsive Layout: Adapts to different screen sizes and orientations.
+
+-------
+
 Code Overview
 -------
 
