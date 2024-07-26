@@ -1,8 +1,8 @@
 ⌨️ Group Box / Card View.
 =======
 
-<img width="374" alt="1" src="https://github.com/user-attachments/assets/4e859429-3238-40b0-8abc-6c7b7ae8604a">
-<img width="374" alt="2" src="https://github.com/user-attachments/assets/5e58bb5b-5e1a-4039-aac5-cbaa904d9f52">
+<img src="https://github.com/user-attachments/assets/4e859429-3238-40b0-8abc-6c7b7ae8604a" width="175" height="310">
+<img src="https://github.com/user-attachments/assets/5e58bb5b-5e1a-4039-aac5-cbaa904d9f52" width="175" height="310">
 
 -------
 
