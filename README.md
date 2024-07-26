@@ -6,6 +6,7 @@
 
 -------
 
+`ContentView`
 `````ruby
 struct ContentView: View {
     var body: some View {
