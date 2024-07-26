@@ -11,19 +11,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            GroupBox("My Content") {
-                Text("This is my groupbox. Isn't it cool. It's like a card view. Awesome!")
-            }
-            .frame(width: 250)
+        ZStack {
+            Rectangle()
+                .foregroundStyle(.cyan.gradient.opacity(0.7))
+                .ignoresSafeArea()
             
-            GroupBox {
-                Text("This is my groupbox. Isn't it cool. It's like a card view. Awesome!")
-            } label: {
-                Label("Now Playing", systemImage: "music.note")
+            VStack {
+                GroupBox("My Content") {
+                    Text("This is my groupbox. Isn't it cool. It's like a card view. Awesome!")
+                }
+                .frame(width: 250)
+                .groupBoxStyle(.music)
+                
+                GroupBox {
+                    GroupBox {
+                        MusicPlayerView()
+                    }
+                    .groupBoxStyle(.music)
+                } label: {
+                    Label("Now Playing", systemImage: "music.note")
+                }
+                .groupBoxStyle(.music)
             }
+            .padding()
         }
-        .padding()
     }
 }
 
@@ -31,11 +42,28 @@ struct ContentView: View {
     ContentView()
 }
 
+struct MusicGroupBoxStyle: GroupBoxStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        VStack(alignment: .leading) {
+            configuration.label
+                .bold()
+                .foregroundStyle(.pink)
+            configuration.content
+        }
+        .padding()
+        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 15))
+    }
+}
+
+extension GroupBoxStyle where Self == MusicGroupBoxStyle {
+    static var music: MusicGroupBoxStyle { .init() }
+}
+
 struct MusicPlayerView: View {
     var body: some View {
         VStack {
             HStack {
-                RoundedRectangle(cornerRadius: 20)
+                RoundedRectangle(cornerRadius: 10)
                     .frame(width: 50, height: 50)
                     .foregroundStyle(.secondary)
                 
